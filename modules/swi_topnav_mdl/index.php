@@ -1,0 +1,2 @@
+    <a class="lang" href="#">Bangla</a>
+    <div id="mastnav"><a class="active" href="#">home</a> | <a href="#">community</a> | <a href="#">my page</a> | <a href="#">options</a> | <a href="#">log out</a></div>

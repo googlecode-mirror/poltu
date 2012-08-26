@@ -1,0 +1,805 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background: url(../images/masthead.gif) repeat-x center top;
+	margin: 0px;
+	padding: 0px;
+}
+#wrapper {
+	font: 12px Verdana, Arial, Helvetica, SolaimanLipi;
+	color: #000000;
+	margin: 0px auto;
+	padding: 0px;
+	width: 960px;
+	display: block;
+	overflow: auto;
+}
+#masthead {
+	background: url(../images/swilogo.gif) no-repeat left top;
+	margin: 0px 0px 20px;
+	padding: 0px;
+	height: auto;
+	clear: both;
+	overflow: auto;
+}
+.logo {
+	background: url(../images/aawajlogo.gif) no-repeat;
+	float: right;
+	height: 125px;
+	width: 137px;
+}
+#content {
+	background: url(../images/aawajcontbg.gif) repeat-y right top;
+	overflow: auto;
+	clear: both;
+}
+#content #left {
+	float: left;
+	width: 600px;
+	padding-right: 20px;
+	padding-left: 0px;
+}
+.footer {
+	clear: both;
+	background: #FFFFFF url(../images/sidebottom.gif) no-repeat right top;
+	height: 20px;
+	padding-top: 20px;
+	font: bold 90% Arial, Helvetica, sans-serif;
+	color: #999999;
+	padding-right: 340px;
+	text-align: center;
+	padding-bottom: 20px;
+}
+#content #right {
+	float: right;
+	width: 320px;
+	background: url(../images/sidetop.gif) no-repeat right top;
+	padding-top: 12px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+#content p {
+	margin: 0px;
+	padding: 5px 0px;
+}
+.footer a {
+	color: #CCCCCC;
+	text-decoration: underline;
+}
+.footer a:hover {
+	color: #666666;
+	text-decoration: underline;
+}
+.shout {
+	background: url(../images/shoutbody1.gif) repeat-y;
+	width: 600px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+.shout .spearhead {
+	background: url(../images/shouthead1.gif) no-repeat;
+	height: 67px;
+}
+.shout .sfoot {
+	background: url(../images/shoutfoot1.gif) no-repeat left bottom;
+	height: 50px;
+	padding: 5px 10px;
+}
+.shout .flag {
+	height: 67px;
+	width: 45px;
+	float: left;
+}
+.avatar {
+	background: url(../images/avatar.gif) no-repeat;
+	padding: 3px;
+	float: left;
+	height: 61px;
+	width: 55px;
+	margin-right: 5px;
+}
+.shout .titletxt {
+	padding: 10px 10px 0px;
+	float: left;
+	height: 57px;
+	width: 420px;
+	color: #999999;
+	font-size: 90%;
+	line-height: 14px;
+}
+.shout .si {
+	float: left;
+	margin-right: 5px;
+	height: 45px;
+	width: 30px;
+}
+.avatar img {
+	height: 55px;
+	width: 55px;
+}
+a img {
+	border-width: 0px;
+}
+.shout .titletxt a {
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+.shout .titletxt a:hover {
+	color: #FF6600;
+	text-decoration: underline;
+}
+#masthead a.lang {
+	line-height: 16px;
+	color: #666666;
+	text-decoration: none;
+	background: url(../images/lang_0.gif) no-repeat;
+	text-align: center;
+	display: block;
+	float: right;
+	height: 23px;
+	width: 84px;
+	margin-right: 20px;
+	clear: both;
+}
+#masthead a.lang:hover {
+	text-decoration: none;
+	background: url(../images/lang_1.gif) no-repeat;
+	color: #D4E168;
+	font-weight: bold;
+}
+#masthead #mastnav {
+	width: 750px;
+	text-align: right;
+	font-size: 90%;
+	font-weight: normal;
+	color: #333333;
+	clear: both;
+	line-height: normal;
+	padding-top: 16px;
+	float: right;
+}
+#right h2 {
+	font-size: 12px;
+	font-style: normal;
+	line-height: 30px;
+	font-weight: bold;
+	background: url(../images/sidehead.gif) no-repeat right top;
+	display: block;
+	margin: 0px;
+	padding: 0px 5px;
+	height: 32px;
+	color: #000000;
+}
+#right h2 img {
+	float: right;
+	position: relative;
+	margin-right: 3px;
+}
+#masthead #mastnav a {
+	color: #666666;
+	text-decoration: none;
+	font-weight: bold;
+}
+#masthead #mastnav a:hover,
+#masthead #mastnav a.active {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.shout .cbubble {
+	background: url(../images/cbubble.gif) no-repeat;
+	float: left;
+	height: 25px;
+	width: 33px;
+	text-align: center;
+	padding-top: 42px;
+}
+.cbubble a {
+	font-weight: bold;
+	color: #FF6600;
+	text-decoration: none;
+}
+.sidebody {
+	margin-top: 5px;
+	margin-bottom: 15px;
+	font-size: 95%;
+	color: #333333;
+	margin-left: 10px;
+}
+.note {
+	font-weight: bold;
+	color: #B4B4B4;
+	font-size: 90%;
+}
+#right a {
+	color: #666699;
+	text-decoration: none;
+	font-weight: bold;
+}
+#right a:hover {
+	color: #FF6600;
+	text-decoration: underline;
+}
+#left a {
+	color: #6633CC;
+	text-decoration: underline;
+	font-weight: normal;
+}
+#left a:hover {
+	color: #000000;
+	text-decoration: underline;
+}
+.search input {
+	background: url(../images/sch_m.gif) repeat-x;
+	height: 27px;
+	width: 160px;
+	border-width: 0px;
+	border-style: none;
+	float: left;
+	line-height: 14px;
+	padding: 5px;
+}
+.sch_l {
+	background: url(../images/sch_l.gif) no-repeat;
+	height: 27px;
+	width: 30px;
+	display: block;
+	float: left;
+}
+.search {
+	height: 27px;
+	clear: both;
+}
+.sch_r {
+	background: url(../images/sch_r.gif) no-repeat;
+	display: block;
+	float: left;
+	height: 27px;
+	width: 7px;
+}
+.search .opt {
+	line-height: 27px;
+	display: block;
+	float: left;
+	padding-left: 10px;
+}
+#right .search a {
+	font-weight: normal;
+	color: #666666;
+	text-decoration: underline;
+}
+.sideactions {
+	clear: both;
+}
+.reqin {
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	position: absolute;
+	color: #FF6600;
+	margin: 2px;
+}
+.reqout {
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	position: absolute;
+	color: #3399FF;
+	margin: 2px;
+}
+#right .sideactions a {
+	font-weight: normal;
+	text-decoration: underline;
+}
+#left h2 {
+	font-size: 14px;
+	font-style: normal;
+	line-height: 40px;
+	font-weight: bold;
+	background: url(../images/bodytitle.gif) repeat-x;
+	margin: 0px;
+	padding: 0px;
+	height: 46px;
+	display: block;
+}
+.bodytitle_l {
+	background: url(../images/bodytitle_l.gif) no-repeat;
+	float: left;
+	height: 46px;
+	width: 12px;
+}
+.bodytitle_r {
+	background: url(../images/bodytitle_r.gif) no-repeat;
+	float: right;
+	height: 46px;
+	width: 13px;
+}
+.community .flag {
+	background: url(../images/ico_public.gif) no-repeat center top;
+}
+.fmember .spearhead {
+	background: url(../images/shouthead2.gif);
+}
+.fmember .sfoot {
+	background: url(../images/shoutfoot2.gif) no-repeat left bottom;
+}
+.fmember {
+	background: url(../images/shoutbody2.gif) repeat-y;
+}
+.status label {
+	font-size: 10px;
+	line-height: 20px;
+	font-weight: bold;
+	color: #999999;
+	text-align: right;
+	padding-right: 5px;
+}
+.status input {
+	width: 370px;
+	border: 1px solid #FFFFFF;
+	background: #EBEBEB;
+}
+.status textarea {
+	height: 60px;
+	width: 430px;
+	border: 1px solid #FFFFFF;
+	background: #EBEBEB;
+}
+#content .status p {
+	margin: 3px 0px;
+	padding: 0px;
+	display: block;
+}
+.status {
+	display: block;
+	margin: 0px;
+	padding: 10px;
+	width: auto;
+}
+.status .sideactions {
+	text-align: right;
+	padding: 5px;
+}
+.status .sidebody {
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
+.sh_update {
+	margin-bottom: 20px;
+	clear: both;
+}
+.sh_update .avatar {
+	background: #EFEFEF url(../images/none) no-repeat;
+	float: left;
+	height: 113px;
+	width: 90px;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+.seperater {
+	clear: both;
+}
+.upd_left {
+	background: url(../images/updatelt.gif) no-repeat;
+	float: right;
+	display: block;
+	height: 25px;
+	width: 7px;
+}
+.upd_right {
+	background: url(../images/update_r.gif) no-repeat;
+	float: right;
+	height: 113px;
+	width: 17px;
+	position: relative;
+}
+.hidden {
+	display: none;
+}
+.shout_disp {
+	font-size: 90%;
+	font-weight: bold;
+	color: #666666;
+	width: 430px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	float: left;
+	line-height: 140%;
+	height: 54px;
+	border-bottom: 1px solid #DFDFDF;
+}
+.sh_update .currentshout {
+	background: url(../images/update_m.gif) repeat-x;
+	height: 113px;
+	float: right;
+	width: 500px;
+}
+.sh_update .foot {
+	font-size: 90%;
+	font-weight: normal;
+	color: #666666;
+	float: left;
+	width: 430px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.sh_update .highlight {
+	font-weight: bold;
+	color: #FFFFFF;
+}
+a.actlink {
+	color: #FFFFFF;
+	text-decoration: none;
+	background: #7C82BF;
+	display: block;
+	float: right;
+	padding: 2px 5px;
+	font-weight: normal;
+	font-size: 10px;
+}
+a.actlink:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+	background: #000000;
+}
+.sh_update .avatar img {
+	clear: both;
+	height: 65px;
+	width: 65px;
+}
+.sh_update .avatar .name {
+	font-weight: bold;
+	display: block;
+	height: 25px;
+	font-size: 90%;
+	line-height: 12px;
+	white-space: pre;
+	word-wrap: break-word;
+	padding: 5px;
+}
+.update {
+	height: 30px;
+	float: right;
+	width: 750px;
+	margin: 18px 0px 5px;
+	padding: 0px;
+}
+.update #updbox {
+	background: #E9E9E9 url(../images/updatebg.gif) repeat-x;
+	width: 650px;
+	float: right;
+	margin: 0px;
+	padding: 4px 0px 0px;
+	color: #FF6600;
+	height: 21px;
+	border-top: 0px none;
+	border-right: 0px none;
+	border-bottom: 0px none;
+	border-left: 0px none;
+	font-size: 14px;
+	line-height: 14px;
+}
+.update #updbutton {
+	height: 25px;
+	border-top: 0px none;
+	border-right: 0px none;
+	border-bottom: 0px none;
+	border-left: 0px none;
+	width: 89px;
+	background: url(../images/updatebtn.gif) no-repeat;
+	float: right;
+	margin: 0px;
+	padding: 0px;
+	line-height: normal;
+	color: #666666;
+	font-size: 14px;
+}
+.headcont {
+	float: right;
+	width: 750px;
+	padding-right: 10px;
+}
+.altsms {
+	background: #E6DE53 url(../images/altsmsbg.gif) repeat-x;
+	border-top: 0px solid #E4E4E4;
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	border-left: 1px solid #E4E4E4;
+	clear: both;
+}
+.altsms .icon {
+	background: url(../images/altsmsico.gif) no-repeat;
+	height: auto;
+	width: auto;
+	padding-left: 55px;
+}
+.altsms p {
+	margin: 0px;
+	padding: 5px 0px;
+}
+.altsms h1 {
+	font-size: 15px;
+	font-style: italic;
+	line-height: 25px;
+	font-weight: bold;
+	margin: 5px 0px;
+	padding: 0px;
+	color: #000000;
+}
+.altsms .note {
+	color: #FF6600;
+}
+
+
+
+
+
+
+.picthumbs a:hover img,
+.picthumbs a img.active {
+	border-color: #FF6600;
+}
+#gallery #fullpic {
+	text-align: center;
+	height: 320px;
+	background: #F3F4F8;
+	padding: 20px;
+}
+#gallery .picthumbs {
+	padding-top: 10px;
+	padding-bottom: 7px;
+	overflow: -moz-scrollbars-horizontal;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	height: 130px;
+}
+#gallery {
+	width: auto;
+	margin-top: 20px;
+}
+#gallery .thumbnail {
+	float: left;
+	margin-right: 5px;
+	margin-left: 5px;
+	text-align: center;
+}
+.thumbnail img {
+	border: 2px solid #999999;
+
+}
+#gallery .caption {
+	font-size: 90%;
+	color: #999999;
+	padding: 10px;
+	text-align: center;
+}
+#gallery .maincap {
+	font-size: 120%;
+	font-weight: bold;
+	color: #333333;
+}
+h2 a {
+	font-size: 80%;
+	display: block;
+	float: right;
+}
+.links {
+	padding: 0px;
+	float: none;
+	margin-right: 20px;
+	background: url(../images/linksbg.gif) repeat-x left bottom;
+	line-height: 25px;
+	color: #999999;
+	text-align: center;
+	margin-left: 20px;
+	font-size: 95%;
+	height: 27px;
+}
+.links .lt {
+	background: url(../images/linkslt.gif) no-repeat left bottom;
+	float: left;
+	height: 27px;
+	width: 9px;
+}
+.links .rt {
+	background: url(../images/linksrt.gif) no-repeat right bottom;
+	float: right;
+	height: 27px;
+	width: 8px;
+}
+#left .links a {
+	text-decoration: none;
+}
+.sidebody .list {
+	padding: 10px 5px;
+	color: #666666;
+	border-bottom: 1px solid #CCCCCC;
+	margin-right: 5px;
+	overflow: hidden;
+}
+.sidebody .album {
+	height: 50px;
+}
+.list img {
+	float: left;
+	height: 50px;
+	width: 50px;
+	margin-right: 5px;
+}
+#content .list p {
+	margin: 0px;
+	padding: 0px 0px 5px;
+}
+.list h1 {
+	font-size: 11px;
+	line-height: normal;
+	font-weight: bold;
+	color: #666666;
+	margin: 0px;
+	padding: 0px 0px 5px;
+}
+#right .list h1 a {
+	color: #000000;
+	font-weight: bold;
+}
+#right .list a {
+	font-weight: normal;
+}
+.comments {
+	margin-left: 49px;
+}
+.comments .top {
+	background: url(../images/commenttop.gif) no-repeat;
+	height: 20px;
+}
+.comments .cont {
+	background: #F7F7F7;
+	border-right: 1px solid #E9E9E9;
+	border-left: 1px solid #E9E9E9;
+	font-size: 95%;
+	color: #666666;
+}
+.comments .bottom {
+	background: url(../images/commentbot.gif) no-repeat;
+	height: 8px;
+}
+.comments h1 {
+	font-size: 12px;
+	line-height: 25px;
+	font-weight: bold;
+	margin: 0px 0px 5px;
+	padding: 0px 0px 2px 27px;
+	border-bottom: 1px solid #DFDFDF;
+	color: #000000;
+	display: block;
+	height: 20px;
+	background: url(../images/comm.gif) no-repeat left 3px;
+}
+.comments .note {
+	font-weight: normal;
+}
+.comments h1 img {
+	float: right;
+	height: 40px;
+	width: 40px;
+	vertical-align: bottom;
+	white-space: pre;
+}
+#left .comments h1 a,
+#left .titletxt a {
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+#left .comments h1 a:hover,
+#left .titletxt a:hover {
+	color: #FF6600;
+	text-decoration: none;
+}
+#content .comments p {
+	display: block;
+	margin-right: 45px;
+}
+.comments .single {
+	padding: 5px 10px;
+}
+.reply h1 {
+	background: url(../images/commreply.gif) no-repeat left 3px;
+	border-bottom-color: #999999;
+}
+.comments .reply p {
+	color: #000000;
+}
+.reply {
+	background-color: #EEEAFF;
+}
+.comments form,
+form.shoutinput {
+	margin: 0px;
+	padding: 5px 10px;
+	text-align: center;
+}
+.comments textarea,
+.shoutinput textarea {
+	width: 100%;
+	border: 1px solid #DFDFDF;
+	height: 60px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.comments .button,
+.shoutinput .button {
+	width: 120px;
+}
+#left .comments .note a {
+	font-weight: normal;
+	color: #6633CC;
+	text-decoration: underline;
+}
+#left .cbubble a {
+	font-weight: bold;
+	color: #FF6600;
+	text-decoration: none;
+}
+#left .titletxt a {
+	font-size: 120%;
+}
+.people img {
+	float: left;
+	margin-top: 2px;
+}
+.sidebody .people {
+	text-indent: 0px;
+}
+.list .details {
+	float: left;
+	width: 240px;
+}
+.links select {
+	height: 20px;
+	border: 1px solid #CCCCCC;
+	margin: 0px;
+	padding: 0px;
+	font-size: 10px;
+	line-height: normal;
+	color: #666666;
+}
+form.shoutinput {
+	background: #EEEAFF url(../images/shinput_mid.gif) repeat-y;
+	margin-top: 10px;
+	padding: 0px;
+}
+.shoutinput .top {
+	background: url(../images/shinput_top.gif) no-repeat;
+	text-align: right;
+	padding: 10px 10px 0px;
+}
+.shoutinput .bottom {
+	background: url(../images/shinput_bot.gif) no-repeat;
+	height: 13px;
+}
+.shoutinput textarea {
+	width: 95%;
+}
+.sidebody form {
+	margin: 0px 5px 0px 0px;
+	padding: 5px;
+	background: #FFFFCC;
+	border: 1px solid #FF9900;
+}
+.sidebody label {
+	text-align: right;
+	width: 50px;
+	display: block;
+	float: left;
+	padding: 5px;
+}
+.sidebody input.smid {
+	width: 220px;
+	clear: right;
+}
+.warning {
+	font-weight: bold;
+	color: #FF0000;
+}
