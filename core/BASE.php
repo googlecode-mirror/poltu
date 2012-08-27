@@ -1,5 +1,5 @@
 <?php
-include_once $core_path . '/adodb/adodb.inc.php';
+include_once CORE_PATH . '/adodb/adodb.inc.php';
 class BASE {
 	
 	public static $DB;
@@ -89,7 +89,8 @@ class BASE {
 		return false;
 	}
 	public function PARSE_TEMPLATE($temp_info, $uri) {
-		$html = file_get_contents ( 'templates/' . $temp_info ['folder_name'] . '/index.html' );
+                
+		$html = file_get_contents ( TMPL_PATH . $temp_info ['folder_name'] . '/index.html' );
 		// get URI_ID by URI
 		$uri_id = $this->GET_URI_ID ( $uri );
 		// get page title
@@ -138,11 +139,11 @@ class BASE {
 		
 		// add module by div container		
 		include ('core/simplehtmldom/simple_html_dom.php');
-		$html = file_get_html ( 'templates/' . $temp_info ['folder_name'] . '/index.html' ); // get template file
+		$html = file_get_html ( TMPL_PATH . $temp_info ['folder_name'] . '/index.html' ); // get template file
                 
 		foreach ( $modules as $k => $v ) {
 
-			$module_output = $this->GET_INCLUDE_CONTENT( 'modules/' . $v ['folder_name'] . '/index.php' );
+			$module_output = $this->GET_INCLUDE_CONTENT( MODULE_PATH . $v ['folder_name'] . '/index.php' );
 			$html->find ( '#' . $v ['container'], 0 )->innertext = $html->find ( '#' . $v ['container'], 0 )->innertext ."". $module_output;
 		}
 		
@@ -175,5 +176,13 @@ class BASE {
 		}
 		return false;
 	}
+        public function View($page_name, $data_array) {
+            //Convert array into variable
+            foreach ($data_array as $k=>$v) {
+                ${$k} = $v;
+            }
+            //load the view
+            require_once 'views/'.$page_name.'.php';
+        }
 }
 ?>

@@ -1,13 +1,16 @@
 <?php 
-class Main  extends SWI_CONTROLLER {
+class Main  extends MVC {
 	public static $viewparams;
 	function Main($viewparams) {
 		$this->viewparams = $viewparams;
 	}
 	function index() {
 		echo "hello from controller"; 
-	}	
-	function _systemview() {
-		
 	}
+        function test()
+        {
+            $data = array("data"=>array("1","2","3"));
+            base::View("test",$data);
+        }
+       
 }

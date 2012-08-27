@@ -1,7 +1,0 @@
-<Modules>
-
-	<module name="name"  value="test" />
-	<module name="foldername"  value="swi_test_mdl" />
-	<module name="systemname"  value="test" />
-
-</Modules>

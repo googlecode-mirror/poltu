@@ -1,7 +1,0 @@
-<Modules>
-<module name="foldername" value="test"/>
-<module name="name" value="test_name"/>
-<module name="css" value="test_css"/>
-<module name="js" value="test_js"/>
-<module name="imagepath" value="test_image"/>
-</Modules>
