@@ -5,10 +5,13 @@ if(!$_SESSION['admin_logedin']) {
 }
 include_once '../core/adodb/adodb.inc.php';
 
-define("HOST", "localhost");
-define("USER", "root");
-define("PASS", "");
-define("ADM_DB", "app_engine");
+require_once '../config/system.php';
+require_once '../config/database.php';
+
+define("HOST", DB_HOST);
+define("USER", DB_USER);
+define("PASS", DB_PASS);
+define("ADM_DB", DB_NAME);
 
 function get_all_modules() {
 	

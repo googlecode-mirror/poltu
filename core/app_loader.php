@@ -2,7 +2,8 @@
 /*
  * load base 
  */
-require_once $core_path . '/BASE.php';
+
+require_once CORE_PATH . '/BASE.php';
 $base = new BASE ( );
 /*
  * check if db is installed or not; if not, then install;
@@ -22,9 +23,9 @@ foreach ( $URI as $k => $v ) {
 	}
 }
 /*
- * load base controller
+ * load base MVC
  */
-require_once $core_path . '/SWI_CONTROLLER.php';
+require_once CORE_PATH . '/MVC.php';
 
 /*
  * get route file 
@@ -36,7 +37,10 @@ require_once $routes_path;*/
  * check routes if URI is predefined
  */
 if ($data_source_type == "mysql") {
+
+
 	$route = $base->GET_ROUTES ( $URI_VAL );
+        
 	if ($route) {
 		/*
 		 * get default template 
@@ -49,13 +53,14 @@ if ($data_source_type == "mysql") {
 			 * get controller 
 			 */
 			if ($route != "system") {
+                                
 				$execution_info = explode ( "/", $route );
 				$controller = $execution_info [0];
 				$method = $execution_info [1];
-				require_once $controllers_path . '/' . $controller . ".php";
+				require_once CONTROLLERS_PATH . '/' . $controller . ".php";
 				/*
-			 * execute custom method(without template), if $method != _systemview 
-			 */
+                                 * execute custom method(without template), if $method != _systemview
+                                 */
 				$Cont = new $controller ( $temp_info );
 				
 				echo $Cont->$method ();
