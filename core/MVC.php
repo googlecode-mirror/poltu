@@ -1,5 +1,6 @@
 <?php
 class MVC extends BASE {
+    
     public function __construct() {
     } 
     public function View($page_name, $data_array) {
@@ -8,7 +9,19 @@ class MVC extends BASE {
             ${$k} = $v;
         }
         //load the view
-        require_once 'views/'.$page_name.'.php';
+        require_once VIEW_PATH.'/'.$page_name.'.php';
+    }
+    public function LoadModel($model_name, $params)
+    {
+        include MODEL_PATH.'/'.$model_name.'.php';
+        $obj = new $model_name($params);
+        return $obj;
+    }
+    public function LoadLibrary($lib_name, $params)
+    {
+        include LIBRARY_PATH.'/'.$lib_name.'.php';
+        $obj = new $lib_name($params);
+        return $obj;
     }
 }
 ?>

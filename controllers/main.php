@@ -1,5 +1,5 @@
 <?php 
-class Main  extends MVC {
+class Main extends MVC {
 	public static $viewparams;
 	function Main($viewparams) {
 		$this->viewparams = $viewparams;
@@ -10,7 +10,7 @@ class Main  extends MVC {
         function test()
         {
             $data = array("data"=>array("1","2","3"));
-            base::View("test",$data);
+            $this->View("test",$data);
         }
        
 }
