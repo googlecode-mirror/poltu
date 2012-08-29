@@ -12,13 +12,7 @@ define("VIEW_PATH","views");
 define("MODEL_PATH","models");
 define("LIBRARY_PATH","libraries");
 
-$notification_path = "notifications";
-$eng_folder = "app_engine";
-//$core_path = "core";
-$modules_path = "modules";
-$controllers_path = "controllers";
-$languages_path = "languages";
-$cache_path = "cache";
+
 
 
 
