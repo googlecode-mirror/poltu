@@ -8,6 +8,9 @@ define("MODULE_PATH", "modules/");
 define("CONFIG_PATH", "config/");
 define("CORE_PATH", "core");
 define("CONTROLLERS_PATH", "controllers");
+define("VIEW_PATH","views");
+define("MODEL_PATH","models");
+define("LIBRARY_PATH","libraries");
 
 $notification_path = "notifications";
 $eng_folder = "app_engine";
