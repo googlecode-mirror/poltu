@@ -1,0 +1,1 @@
+Poltu is a MVC based PHP Application framework and also a Content Management System (CMS). The objective of this project is to provide an MVC based Framework and a Dynamic Content Management System both at a time which will be programmable or easily maintained by its web admin console. the project is in its cradle, so anyone interested to contribute are most welcomed.
